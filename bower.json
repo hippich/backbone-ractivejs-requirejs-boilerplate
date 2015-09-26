@@ -1,0 +1,20 @@
+{
+  "name": "Backbone + RactiveJS + RequireJS Boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Pavel Karoukin <pavel@karoukin.us>"
+  ],
+  "description": "Boilerplate project to get you started with Backbone, RactiveJS and RequireJS.",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
