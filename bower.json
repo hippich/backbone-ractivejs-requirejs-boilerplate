@@ -16,5 +16,14 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "ractive": "~0.7.3",
+    "backbone": "~1.2.3",
+    "ractive-adaptors-backbone": "~0.3.0",
+    "requirejs": "~2.1.20",
+    "jquery": "~2.1.4",
+    "require-css": "~0.1.8",
+    "rv": "~0.1.8"
+  }
 }
