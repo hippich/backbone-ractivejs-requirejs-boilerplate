@@ -1,0 +1,15 @@
+<div id="wrapper">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div decorator="view:{{model.headerView}}" class="navbar-header-wrapper"></div>
+
+    <div decorator="view:{{model.sidebarView}}" class="navbar-default sidebar" role="navigation"></div>
+    <!-- /.navbar-static-side -->
+  </nav>
+
+  <!-- Page Content -->
+  <div decorator="view:{{model.contentView}}" id="page-wrapper"></div>
+  <!-- /#page-wrapper -->
+
+  <div decorator="view:{{model.footerView}}" id="footer"></div>
+</div>
