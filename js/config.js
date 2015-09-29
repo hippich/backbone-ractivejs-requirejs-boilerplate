@@ -1,6 +1,4 @@
 require.config({
-    baseUrl: '/',
-
     map: {
         '*': {
             app        : 'js',
