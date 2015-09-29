@@ -1,0 +1,35 @@
+{
+  "name": "ractive-backbone",
+  "description": "Backbone adaptor for Ractive.js",
+  "version": "0.3.0",
+  "author": "Rich Harris",
+  "license": "MIT",
+  "main": "dist/ractive-adaptors-backbone.js",
+  "ignore": [
+    "**/.*",
+    "src",
+    "test",
+    "Gruntfile.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ractivejs/ractive-adaptors-backbone.git"
+  },
+  "keywords": [
+    "backbone",
+    "ractive",
+    "data binding",
+    "templates"
+  ],
+  "homepage": "https://github.com/ractivejs/ractive-adaptors-backbone",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "29896c66a70276a14bf79091dd2b3c2a21ca1443"
+  },
+  "_source": "git://github.com/ractivejs/ractive-adaptors-backbone.git",
+  "_target": "~0.3.0",
+  "_originalSource": "ractive-adaptors-backbone",
+  "_direct": true
+}
