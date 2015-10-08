@@ -54,6 +54,10 @@ define(function(require) {
     return Backbone.View.extend({
         ractive: null,
 
+        initialize: function() {
+            this.render();
+        },
+
         close: function() {
             this.ractive.teardown();
             this.ractive = null;
