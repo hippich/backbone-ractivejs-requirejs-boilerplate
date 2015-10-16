@@ -20,7 +20,8 @@ require.config({
         ractive          : 'components/ractive/ractive',
         ractiveBBAdapter : 'components/ractive-adaptors-backbone/dist/ractive-adaptors-backbone',
         rv               : 'components/rv/rv',
-        sbAdmin          : 'components/startbootstrap-sb-admin-2/dist/js/sb-admin-2'
+        sbAdmin          : 'components/startbootstrap-sb-admin-2/dist/js/sb-admin-2',
+        stateman         : 'components/stateman/stateman'
     },
 
     shim: {

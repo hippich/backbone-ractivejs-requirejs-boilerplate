@@ -1,0 +1,34 @@
+{
+  "name": "stateman",
+  "version": "0.2.0",
+  "main": "stateman.js",
+  "description": "A tiny foundation that providing nested state-based routing for complex web application.",
+  "keywords": [
+    "router",
+    "state",
+    "spa"
+  ],
+  "authors": "@leeluolee <87399126@163.com>",
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "node_modules",
+    "bin",
+    "test",
+    "docs",
+    "gulpfile.js",
+    "*.json",
+    "*.md"
+  ],
+  "homepage": "https://github.com/leeluolee/stateman",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "a1fa7db0c19d99d4c62c5f85249e2cef4e951314"
+  },
+  "_source": "git://github.com/leeluolee/stateman.git",
+  "_target": "~0.2.0",
+  "_originalSource": "stateman",
+  "_direct": true
+}
