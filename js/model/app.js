@@ -2,10 +2,13 @@ define(function(require) {
     var $ = require('jquery');
     var Model = require('model');
 
+    // Controller class
+    var Controller = require('app/controller');
+
+    // Base views
     var LayoutView = require('app/view/layout');
     var HeaderView = require('app/view/layout/header');
     var SidebarView = require('app/view/layout/sidebar');
-    var ContentView = require('app/view/layout/content');
     var FooterView = require('app/view/layout/footer');
 
     return Model.extend({
@@ -15,6 +18,8 @@ define(function(require) {
         },
 
         initialize: function() {
+            this.controller = new Controller();
+
             this.set({
                 layoutView: new LayoutView({
                     el: this.get('el'),
