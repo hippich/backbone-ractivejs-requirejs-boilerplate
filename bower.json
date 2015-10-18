@@ -29,6 +29,7 @@
     "startbootstrap-sb-admin-2": "~1.0.7",
     "backbone-forms": "~0.14.0",
     "lodash": "~3.10.1",
-    "stateman": "~0.2.0"
+    "stateman": "~0.2.0",
+    "bluebird": "~2.10.2"
   }
 }

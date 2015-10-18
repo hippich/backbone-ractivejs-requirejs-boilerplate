@@ -18,7 +18,8 @@ define(function(require) {
         },
 
         initialize: function() {
-            this.controller = new Controller();
+            this.controller = Controller(this);
+            this.controller.start();
 
             this.set({
                 layoutView: new LayoutView({
@@ -27,7 +28,6 @@ define(function(require) {
                 }),
                 headerView: new HeaderView({ model: this }),
                 sidebarView: new SidebarView({ model: this }),
-                contentView: new ContentView({ model: this }),
                 footerView: new FooterView({ model: this })
             });
 

@@ -12,6 +12,7 @@ require.config({
         view             : 'js/lib/view',
 
         backbone         : 'components/backbone/backbone',
+        promise          : 'components/bluebird/js/browser/bluebird',
         bootstrap        : 'components/bootstrap/dist/js/bootstrap.min',
         forms            : 'components/backbone-forms/distribution.amd/backbone-forms.min',
         jquery           : 'components/jquery/dist/jquery',
