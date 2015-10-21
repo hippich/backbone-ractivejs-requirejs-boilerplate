@@ -19,7 +19,6 @@ define(function(require) {
 
         initialize: function() {
             this.controller = Controller(this);
-            this.controller.start();
 
             this.set({
                 layoutView: new LayoutView({
