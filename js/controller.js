@@ -30,9 +30,8 @@ define(function(require) {
 
                 if (state.path.match(/^\/dashboard/)) {
                     stateman.ondemandController('app/controller/dashboard', state.path);
+                    return;
                 }
-
-                return;
             }
 
             //this.go("app.contact");
