@@ -12,6 +12,14 @@ define(function(require) {
             });
         };
 
+        stateman.state({
+            'base': {
+                url: '',
+                enter: function() {
+                }
+            }
+        });
+
         // Add base routes
         stateman.state({
             'notfound': {
@@ -29,8 +37,7 @@ define(function(require) {
                 notfound_path = state.path;
 
                 if (state.path.match(/^\/dashboard/)) {
-                    stateman.ondemandController('app/controller/dashboard', state.path);
-                    return;
+                    return stateman.ondemandController('app/controller/dashboard', state.path);
                 }
             }
 
