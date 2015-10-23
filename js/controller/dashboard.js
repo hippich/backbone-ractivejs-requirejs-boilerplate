@@ -8,20 +8,21 @@ define(function(require) {
     var FooterView = require('app/view/layout/footer');
 
     var getPageView = function(template) {
-        var view = View.extend({
+        var PageView = View.extend({
             model    : app,
-            template : require(template)
+            template : template
         });
 
-        return new view();
+        return new PageView();
     };
 
     return function(app) {
         app.controller.state({
+
             'dashboard': {
                 title: 'Dashboard',
                 url: '/dashboard',
-                enter: function() {
+                enter: function(state) {
 
                     // Render layout
                     app.set({
@@ -35,19 +36,18 @@ define(function(require) {
                     });
                     app.get('layoutView').render();
 
-                    console.log(arguments);
+                    if (state.path === '/dashboard') {
+                        app.controller.go('dashboard.index');
+                    }
                 }
             },
 
-            'dashboard.index': {
-                url: '',
-                enter: function() {
-                    app.set('contentView', getPageView('rv!app/template/page/index'));
-                }
+            'dashboard.index': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/index')));
             },
 
             'dashboard.flot':  function() {
-                app.set('contentView', getPageView('rv!app/template/page/flot'));
+                app.set('contentView', getPageView(require('rv!app/template/page/flot')));
             }
         });
     };

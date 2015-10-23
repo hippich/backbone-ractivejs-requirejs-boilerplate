@@ -35,6 +35,7 @@ define(function(require) {
                     view.render();
                 }
 
+                node.innerHTML = '';
                 view.ractive.insert(node);
             }
         }
