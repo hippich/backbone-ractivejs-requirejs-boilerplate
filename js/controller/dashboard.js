@@ -47,7 +47,8 @@ define(function(require) {
             },
 
             'dashboard.flot':  function() {
-                app.set('contentView', getPageView(require('rv!app/template/page/flot')));
+                var FlotPageView = require('app/view/page/flot');
+                app.set('contentView', new FlotPageView());
             }
         });
     };

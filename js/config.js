@@ -34,6 +34,26 @@ require.config({
         },
         sbAdmin: {
             deps: ['metisMenu', 'bootstrap']
+        },
+
+        // Flot libraries need to load in this specific order
+        'components/flot/excanvas.min': {
+            deps: ['jquery']
+        },
+        'components/flot/jquery.flot': {
+            deps: ['jquery']
+        },
+        'components/flot/jquery.flot.pie': {
+            deps: ['components/flot/jquery.flot']
+        },
+        'components/flot/jquery.flot.resize': {
+            deps: ['components/flot/jquery.flot']
+        },
+        'components/flot/jquery.flot.time': {
+            deps: ['components/flot/jquery.flot']
+        },
+        'components/flot.tooltip/js/jquery.flot.tooltip.min': {
+            deps: ['components/flot/jquery.flot']
         }
     }
 });
