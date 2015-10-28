@@ -30,6 +30,7 @@
     "backbone-forms": "~0.14.0",
     "lodash": "~3.10.1",
     "stateman": "~0.2.0",
-    "bluebird": "~2.10.2"
+    "bluebird": "~2.10.2",
+    "requirejs-text": "~2.0.14"
   }
 }

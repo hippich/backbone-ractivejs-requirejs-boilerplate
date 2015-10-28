@@ -3,6 +3,7 @@ require.config({
         '*': {
             app        : 'js',
             css        : 'components/require-css/css',
+            text       : 'components/requirejs-text/text',
             underscore : 'lodash',
         }
     },
