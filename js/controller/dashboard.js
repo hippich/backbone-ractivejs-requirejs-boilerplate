@@ -49,6 +49,11 @@ define(function(require) {
             'dashboard.flot':  function() {
                 var FlotPageView = require('app/view/page/flot');
                 app.set('contentView', new FlotPageView());
+            },
+
+            'dashboard.tables':  function() {
+                var TablesPageView = require('app/view/page/tables');
+                app.set('contentView', new TablesPageView());
             }
         });
     };
