@@ -54,7 +54,12 @@ define(function(require) {
             'dashboard.tables':  function() {
                 var TablesPageView = require('app/view/page/tables');
                 app.set('contentView', new TablesPageView());
+            },
+
+            'dashboard.forms': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/forms')));
             }
+
         });
     };
 });
