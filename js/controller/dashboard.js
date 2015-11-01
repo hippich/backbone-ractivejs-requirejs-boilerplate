@@ -51,6 +51,11 @@ define(function(require) {
                 app.set('contentView', new FlotPageView());
             },
 
+            'dashboard.morris':  function() {
+                var MorrisPageView = require('app/view/page/morris');
+                app.set('contentView', new MorrisPageView());
+            },
+
             'dashboard.tables':  function() {
                 var TablesPageView = require('app/view/page/tables');
                 app.set('contentView', new TablesPageView());
