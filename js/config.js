@@ -37,6 +37,13 @@ require.config({
             deps: ['metisMenu', 'bootstrap']
         },
 
+        'components/datatables/media/js/jquery.dataTables.min': {
+            deps: ['jquery']
+        },
+        'components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min': {
+            deps: ['components/datatables/media/js/jquery.dataTables.min']
+        },
+
         // Flot libraries need to load in this specific order
         'components/flot/excanvas.min': {
             deps: ['jquery']
