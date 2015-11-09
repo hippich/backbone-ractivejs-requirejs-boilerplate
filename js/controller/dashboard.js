@@ -67,6 +67,10 @@ define(function(require) {
 
             'dashboard.panels': function() {
                 app.set('contentView', getPageView(require('rv!app/template/page/panels-wells')));
+            },
+
+            'dashboard.buttons': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/buttons')));
             }
 
         });
