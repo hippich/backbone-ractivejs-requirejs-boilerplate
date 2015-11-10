@@ -70,7 +70,8 @@ define(function(require) {
             },
 
             'dashboard.buttons': function() {
-                app.set('contentView', getPageView(require('rv!app/template/page/buttons')));
+                var PageView = require('app/view/page/buttons');
+                app.set('contentView', new PageView());
             }
 
         });
