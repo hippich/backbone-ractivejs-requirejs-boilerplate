@@ -72,6 +72,11 @@ define(function(require) {
             'dashboard.buttons': function() {
                 var PageView = require('app/view/page/buttons');
                 app.set('contentView', new PageView());
+            },
+
+            'dashboard.notifications': function() {
+                var PageView = require('app/view/page/notifications');
+                app.set('contentView', new PageView());
             }
 
         });
