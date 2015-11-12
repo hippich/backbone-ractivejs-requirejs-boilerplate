@@ -77,7 +77,11 @@ define(function(require) {
             'dashboard.notifications': function() {
                 var PageView = require('app/view/page/notifications');
                 app.set('contentView', new PageView());
-            }
+            },
+
+            'dashboard.typography': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/typography')));
+            },
 
         });
     };
