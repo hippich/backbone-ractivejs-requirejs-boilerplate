@@ -83,6 +83,10 @@ define(function(require) {
                 app.set('contentView', getPageView(require('rv!app/template/page/typography')));
             },
 
+            'dashboard.icons': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/icons')));
+            }
+
         });
     };
 });
