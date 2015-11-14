@@ -89,6 +89,10 @@ define(function(require) {
 
             'dashboard.grids': function() {
                 app.set('contentView', getPageView(require('rv!app/template/page/grids')));
+            },
+
+            'dashboard.blank': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/blank')));
             }
 
         });
