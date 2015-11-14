@@ -85,6 +85,10 @@ define(function(require) {
 
             'dashboard.icons': function() {
                 app.set('contentView', getPageView(require('rv!app/template/page/icons')));
+            },
+
+            'dashboard.grids': function() {
+                app.set('contentView', getPageView(require('rv!app/template/page/grids')));
             }
 
         });
