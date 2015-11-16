@@ -94,7 +94,6 @@ define(function(require) {
             'dashboard.blank': function() {
                 app.set('contentView', getPageView(require('rv!app/template/page/blank')));
             }
-
         });
     };
 });

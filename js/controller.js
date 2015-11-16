@@ -17,11 +17,8 @@ define(function(require) {
                 url: '',
                 enter: function() {
                 }
-            }
-        });
+            },
 
-        // Add base routes
-        stateman.state({
             'notfound': {
                 url: '404',
                 enter: function() {
