@@ -7,7 +7,8 @@ define(function(require) {
 
     return Model.extend({
         defaults: {
-            el: 'body'
+            el: 'body',
+            loggedIn: false
         },
 
         initialize: function() {

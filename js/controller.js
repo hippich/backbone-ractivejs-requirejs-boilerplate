@@ -38,7 +38,15 @@ define(function(require) {
 
             'login': {
                 url: 'login',
+                canEnter: function() {
+                    return !loggedIn;
+                },
                 enter: function() {
+                    var loginView = new LoginView({
+                        el: app.get('el'),
+                        model: app
+                    });
+                    loginView.render();
                 }
             }
         });
@@ -54,8 +62,7 @@ define(function(require) {
                 }
             }
 
-            //this.go("app.contact");
-            alert('not found');
+            this.go("notfound");
         });
 
         stateman.start();
