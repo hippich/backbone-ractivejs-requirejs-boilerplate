@@ -13,6 +13,10 @@ define(function(require) {
 
         initialize: function() {
             this.controller = Controller(this);
+        },
+
+        isLoggedIn: function() {
+            return this.get('loggedIn');
         }
     });
 });

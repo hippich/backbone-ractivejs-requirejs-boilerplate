@@ -1,10 +1,6 @@
 define(function(require) {
     var StateMan = require('stateman');
     var Promise = require('promise');
-
-    // A way to mimick logged in state
-    var loggedIn = false;
-
     var LoginView = require('app/view/login');
 
     return function(app) {
@@ -27,7 +23,7 @@ define(function(require) {
             'notfound': {
                 url: '404',
                 enter: function() {
-                    if (loggedIn) {
+                    if (app.isLoggedIn()) {
                         alert('not found');
                     }
                     else {
@@ -39,7 +35,7 @@ define(function(require) {
             'login': {
                 url: 'login',
                 canEnter: function() {
-                    return !loggedIn;
+                    return !app.isLoggedIn();
                 },
                 enter: function() {
                     var loginView = new LoginView({
